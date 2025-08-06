@@ -1,0 +1,51 @@
+#!/bin/bash
+
+echo "🚀 StyleScope - Quick AWS Setup for Hackathon"
+echo "=============================================="
+echo ""
+
+echo "📋 Step 1: Create IAM User"
+echo "1. Go to: https://console.aws.amazon.com/iam/home#/users"
+echo "2. Click 'Create user'"
+echo "3. Username: stylescope-hackathon"
+echo "4. Check 'Programmatic access'"
+echo "5. Click 'Next: Permissions'"
+echo ""
+
+echo "📋 Step 2: Attach Policies (Quick Setup)"
+echo "For hackathon speed, attach these AWS managed policies:"
+echo "- AmazonS3FullAccess"
+echo "- AmazonDynamoDBFullAccess" 
+echo "- ComprehendFullAccess"
+echo "- AmazonBedrockFullAccess"
+echo ""
+echo "⚠️  Note: These are broad permissions for development only!"
+echo ""
+
+echo "📋 Step 3: Get Your Credentials"
+echo "After creating the user, AWS will show:"
+echo "- Access Key ID (starts with AKIA...)"
+echo "- Secret Access Key (long random string)"
+echo ""
+echo "💾 IMPORTANT: Save these immediately - you can't see the secret again!"
+echo ""
+
+echo "📋 Step 4: Update .env.local"
+echo "Replace these lines in your .env.local file:"
+echo ""
+echo "AWS_ACCESS_KEY_ID=your_access_key_here"
+echo "AWS_SECRET_ACCESS_KEY=your_secret_key_here"
+echo ""
+echo "With your actual credentials:"
+echo "AWS_ACCESS_KEY_ID=AKIA...your_actual_key"
+echo "AWS_SECRET_ACCESS_KEY=your_actual_secret"
+echo ""
+
+echo "📋 Step 5: Test Your Setup"
+echo "npm run test:services"
+echo ""
+
+echo "🎯 Goal: All services should show ✅ success status"
+echo ""
+
+echo "Need help? Check AWS_SETUP.md for detailed instructions!"

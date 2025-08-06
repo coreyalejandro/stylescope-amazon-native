@@ -1,0 +1,25 @@
+{
+  "name": "StyleScope",
+  "description": "AI Fashion Commentary with Amazon Services",
+  "version": "1.0.0",
+  "hackathon": "Code with Kiro Hackathon",
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "Amazon Product Advertising API",
+    "Amazon Bedrock",
+    "Amazon Comprehend",
+    "Amazon S3",
+    "Amazon DynamoDB",
+    "Amazon CloudFront"
+  ],
+  "accessibility": {
+    "wcag_compliance": "2.1 AA",
+    "target_users": ["neurodivergent", "disabled", "general_public"],
+    "features": ["screen_reader_support", "keyboard_navigation", "high_contrast", "text_scaling"]
+  },
+  "social_impact": {
+    "focus": "disability_representation",
+    "target": "fashion_media_inclusion"
+  }
+}

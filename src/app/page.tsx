@@ -1,103 +1,90 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+      <main id="main-content" className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            StyleScope
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+            AI Fashion Commentary by Alex Chen
+          </p>
+          
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-12">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                <span className="text-white text-2xl font-bold">AC</span>
+              </div>
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+              Meet Alex Chen
+            </h2>
+            
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              Your disabled neurodivergent fashion commentator, providing weekly trend analysis 
+              using Amazon&apos;s native services. Authentic disability representation meets 
+              cutting-edge AI technology.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div className="space-y-4">
+                <h3 className="font-semibold text-gray-900 dark:text-white">
+                  🔍 Real Data Analysis
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Amazon Product Advertising API integration for authentic fashion insights
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="font-semibold text-gray-900 dark:text-white">
+                  🧠 AI-Powered Commentary
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Amazon Bedrock generates thoughtful trend analysis with Alex&apos;s unique perspective
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="font-semibold text-gray-900 dark:text-white">
+                  💭 Sentiment Insights
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Amazon Comprehend analyzes customer reviews for authentic feedback
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="font-semibold text-gray-900 dark:text-white">
+                  ♿ Accessibility First
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Designed for neurodivergent users with WCAG 2.1 AA compliance
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-6">
+            <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+              🚧 Development in Progress
+            </h3>
+            <p className="text-yellow-700 dark:text-yellow-300">
+              StyleScope is being built for the Code with Kiro Hackathon. 
+              Check back soon for Alex&apos;s first fashion commentary episode!
+            </p>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      
+      <nav id="navigation" className="sr-only">
+        <ul>
+          <li><a href="#main-content">Main Content</a></li>
+          <li><a href="/api/health/services">Service Health</a></li>
+        </ul>
+      </nav>
     </div>
   );
 }
