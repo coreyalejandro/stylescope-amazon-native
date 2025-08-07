@@ -1,6 +1,6 @@
 # StyleScope - AI Fashion Commentary
 
-StyleScope is an AI-powered fashion commentary web application featuring Alex Chen, a disabled neurodivergent avatar who provides weekly fashion trend analysis using Amazon's native services ecosystem.
+AI-powered fashion commentary with Alex Chen - Amazon native implementation featuring adaptive fashion analysis and accessibility-first design.
 
 ## 🎯 Project Overview
 
@@ -28,8 +28,8 @@ Built for the **Code with Kiro Hackathon**, StyleScope demonstrates comprehensiv
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd stylescope
+git clone https://github.com/coreyalejandro/stylescope-amazon-native.git
+cd stylescope-amazon-native
 ```
 
 2. Install dependencies
@@ -68,9 +68,11 @@ npm run test:services
 npm run dev
 ```
 
-7. Verify service health
-- Visit: `http://localhost:3000/api/health/services`
-- Or: `http://localhost:3000/api/test/services`
+7. **🎭 Live Demo Pages**
+- **Personality Engine Demo**: `http://localhost:3000/personality-demo`
+- **Real-time Testing**: `http://localhost:3000/real-time`
+- **Live Test Interface**: `http://localhost:3000/live-test`
+- **Service Health**: `http://localhost:3000/api/health/services`
 
 **📖 For detailed AWS setup instructions, see [AWS_SETUP.md](./AWS_SETUP.md)**
 
